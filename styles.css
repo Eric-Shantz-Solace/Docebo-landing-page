@@ -176,7 +176,7 @@
 
 /* Reasons section */
 .landing-reasons-container {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 .landing-reasons {
@@ -192,8 +192,10 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 2rem;
-  border: 1px solid #f0f0f0;
+  padding: 2rem 2rem 1rem 2rem;
+  border: 1px solid #00C895;
+  border: 1px solid #021b2f;
+  border: 1px solid #c1c1c1;
   border-radius: 8px;
 }
 .landing-reason-card.long-card {
@@ -210,11 +212,6 @@
 .landing-reason-icon img {
   max-width: 4rem;
   height: auto;
-}
-.landing-reason-card:nth-child(3) {
-  /* Long Card */
-  grid-column: 3;
-  grid-row: 1 / span 2;
 }
 .landing-reason-card:nth-child(4) {
   grid-column: 1;
@@ -518,7 +515,7 @@
   color: white;
 }
 
-/* Responsive adjustments */
+/* Responsive scrollbar */
 @media (max-width: 768px) {
   .landing-scrollbar-card .short-title {
     color: #666;
@@ -556,12 +553,11 @@
     grid-template-rows: auto auto auto;
   }
 
-  .landing-reason-card:nth-child(3) {
+  .landing-reason-card.long-card {
     grid-column: span 2;
     grid-row: auto;
   }
 }
-
 @media (max-width: 900px) {
   .landing-reasons-grid {
     display: flex;
@@ -573,7 +569,7 @@
     width: 100%;
   }
 
-  .landing-reason-card:nth-child(3) {
+  .landing-reason-card.long-card {
     grid-column: unset;
     grid-row: unset;
   }
