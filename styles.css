@@ -175,34 +175,54 @@
 }
 
 /* Reasons section */
+.landing-reasons-container {
+  width: 80%;
+  margin: auto;
+}
 .landing-reasons {
   background-color: #f0fef9;
 }
 .landing-reasons-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
   gap: 24px;
 }
 .landing-reason-card {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 2rem 1rem 1rem;
+  align-items: flex-start;
+  padding: 2rem;
   border: 1px solid #f0f0f0;
   border-radius: 8px;
 }
-.landing-reason-icon {
-  margin: -8rem 1rem 0 1rem !important;
+.landing-reason-card.long-card {
+  grid-column: 3;
+  grid-row: 1 / span 2;
 }
-.landing-reason-icon img {
-  max-width: 4rem !important;
-  height: auto;
+.landing-reason-icon {
+  flex-shrink: 0;
+  margin-right: 1rem;
 }
 .landing-reason-content {
-  display: flex;
-  flex-direction: column;
-  margin-top: -1rem !important;
+  flex-grow: 1;
+}
+.landing-reason-icon img {
+  max-width: 4rem;
+  height: auto;
+}
+.landing-reason-card:nth-child(3) {
+  /* Long Card */
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.landing-reason-card:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+.landing-reason-card:nth-child(5) {
+  grid-column: 2;
+  grid-row: 2;
 }
 .landing-reason-card h3 {
   font-size: 18px;
@@ -530,23 +550,36 @@
 }
 
 /* Responsive styles */
-@media (max-width: 900px) {
-  .four-cards-container {
+@media (max-width: 1300px) {
+  .landing-reasons-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
   }
 
-  .four-grid-card {
-    margin-bottom: 3rem;
+  .landing-reason-card:nth-child(3) {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .landing-reasons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .landing-reason-card {
+    width: 100%;
+  }
+
+  .landing-reason-card:nth-child(3) {
+    grid-column: unset;
+    grid-row: unset;
   }
 }
 @media (max-width: 768px) {
   .landing-getting-started-content {
-    grid-template-columns: 1fr;
-  }
-
-  .offerings-grid,
-  .reasons-grid,
-  .plans-grid {
     grid-template-columns: 1fr;
   }
 
@@ -560,6 +593,23 @@
   }
 }
 @media (max-width: 480px) {
+  .landing-reasons-grid {
+    gap: 12px;
+  }
+
+  .landing-reason-card {
+    padding: 1.5rem;
+  }
+
+  .landing-reason-icon img {
+    max-width: 3rem;
+  }
+
+  .landing-reason-content > ul > li,
+  .landing-reason-card p {
+    font-size: 14px;
+  }
+
   .landing-footer-grid {
     grid-template-columns: 1fr;
   }
