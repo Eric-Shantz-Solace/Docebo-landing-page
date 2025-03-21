@@ -193,9 +193,7 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 2rem 2rem 1rem 2rem;
-  border: 1px solid #00C895;
-  border: 1px solid #021b2f;
-  border: 1px solid #c1c1c1;
+  border: 1px solid #e1e1e1;
   border-radius: 8px;
 }
 .landing-reason-card.long-card {
