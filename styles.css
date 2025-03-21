@@ -405,7 +405,7 @@
   color: #021b2f;
   margin-bottom: 8px;
   text-align: center;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .landing-resource-item-description {
   color: #666;
@@ -418,7 +418,7 @@
   margin-bottom: 1rem;
   padding-left: 1rem !important;
 }
-.landing-resource-item-features li{
+.landing-resource-item-features li {
   color: #00c895;
 }
 .landing-feature-item {
