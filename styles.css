@@ -29,6 +29,7 @@
 .landing-page-march25 {
   width: 100vw;
   margin-left: -8px;
+  margin-bottom: -8px;
 }
 .landing-page-march25 a {
   color: inherit;
@@ -238,14 +239,14 @@
   /* This creates the scrollable container */
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  /* scroll-snap-type: x mandatory; */
+  scroll-snap-align: start;
   scroll-behavior: smooth;
   gap: 20px;
   padding: 20px 10px;
-  margin: 0 4rem;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #888 #f1f1f1; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
 }
 .landing-carousel::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -259,13 +260,7 @@
 .landing-carousel::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-.landing-scrollbar-container {
-  height: 10px;
-  background: #f1f1f1;
-  border-radius: 0 0 12px 12px;
-  margin-bottom: 20px;
-}
-.landing-scrollbar-card {
+.landing-carousel-card {
   scroll-snap-align: start;
   flex: 0 0 auto;
   width: 300px;
@@ -276,11 +271,11 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-.landing-scrollbar-card:hover {
-  transform: translateY(-5px);
+.landing-carousel-card:hover {
+  transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
-.landing-scrollbar-card-img {
+.landing-carousel-card-img {
   width: 100%;
   height: 11rem;
   display: flex;
@@ -291,17 +286,17 @@
   background-size: cover;
   background-position: center;
 }
-.landing-scrollbar-card-content {
+.landing-carousel-card-content {
   padding: 20px;
 }
-.landing-scrollbar-card h3 {
+.landing-carousel-card h3 {
   margin-bottom: 10px;
   color: #333;
   font-size: 18px;
   padding-top: 0.5rem;
   border-top: 1px solid #eee;
 }
-.landing-scrollbar-card p {
+.landing-carousel-card p {
   color: #666;
   line-height: 1.5;
   font-size: 14px;
@@ -311,7 +306,7 @@
   overflow: hidden;
   margin-bottom: 0.5rem;
 }
-.landing-scrollbar-card .short-title {
+.landing-carousel-card .short-title {
   color: #666;
   line-height: 1.5;
   font-size: 14px;
@@ -321,7 +316,7 @@
   overflow: hidden;
   margin-bottom: 1rem;
 }
-.landing-scrollbar-card-footer {
+.landing-carousel-card-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -330,7 +325,7 @@
   font-size: 13px;
   color: #888;
 }
-.landing-scrollbar-card-tag {
+.landing-carousel-card-tag {
   display: inline-block;
   padding: 4px 10px;
   border-radius: 20px;
@@ -535,6 +530,9 @@
     grid-column: span 2;
     grid-row: auto;
   }
+  .landing-carousel {
+    margin: 0;
+  }
 }
 @media (max-width: 1024px) {
   .landing-resource-item-grid {
@@ -581,7 +579,7 @@
   .landing-getting-started-content {
     grid-template-columns: 1fr;
   }
-  .landing-scrollbar-card .short-title {
+  .landing-carousel-card .short-title {
     color: #666;
     line-height: 1.5;
     font-size: 14px;
@@ -591,10 +589,10 @@
     overflow: hidden;
     margin-bottom: 1rem;
   }
-  .landing-scrollbar-card {
+  .landing-carousel-card {
     width: 260px;
   }
-  .landing-scrollbar-card-img {
+  .landing-carousel-card-img {
     height: 160px;
   }
   .landing-btn {
@@ -653,10 +651,10 @@
   .landing-reason-card p {
     font-size: 14px;
   }
-  .landing-scrollbar-card {
+  .landing-carousel-card {
     width: 220px;
   }
-  .landing-scrollbar-card-img {
+  .landing-carousel-card-img {
     height: 140px;
   }
   .landing-footer-grid {
