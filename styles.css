@@ -30,7 +30,6 @@
   width: 100vw;
   margin-left: -8px;
 }
-
 .landing-page-march25 a {
   color: inherit;
 }
@@ -142,7 +141,7 @@
   background-position: center;
 }
 
-/* getting started section */
+/* Getting Started Section */
 .landing-getting-started {
   background-color: #f0fef9;
 }
@@ -154,16 +153,6 @@
 .landing-getting-started-text p {
   text-align: center;
   color: #555;
-}
-.four-cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 2rem;
-  justify-items: center;
-  align-items: flex-start;
-}
-.four-grid-card {
-  width: 12rem;
 }
 .landing-card-img {
   margin: auto;
@@ -239,30 +228,24 @@
 .landing-featured-courses {
   background-color: #ffffff;
 }
-/* Carousel */
 .landing-carousel-container {
   width: 100%;
   position: relative;
   padding: 0 20px;
   margin: auto;
 }
-/* This creates the scrollable container */
 .landing-carousel {
+  /* This creates the scrollable container */
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
   gap: 20px;
   padding: 20px 10px;
   margin: 0 4rem;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scrollbar-width: thin; /* Firefox */
   scrollbar-color: #888 #f1f1f1; /* Firefox */
-}
-/* Style scrollbar for Chrome, Safari and Opera */
-.landing-carousel::-webkit-scrollbar {
-  height: 10px;
-  display: block;
 }
 .landing-carousel::-webkit-scrollbar-track {
   background: #f1f1f1;
@@ -276,7 +259,6 @@
 .landing-carousel::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
-/* Scrollbar container */
 .landing-scrollbar-container {
   height: 10px;
   background: #f1f1f1;
@@ -356,15 +338,12 @@
   font-weight: 500;
 }
 
-/* resources section */
+/* Resources Section */
 .landing-resources {
   padding-bottom: 8rem;
   background: no-repeat
     url("https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/web_mesh_bg.png");
   background-size: cover;
-}
-.landing-learn-more {
-  background-color: white;
 }
 .landing-resource-item {
   margin-bottom: 5rem;
@@ -420,7 +399,6 @@
   color: #021b2f;
   margin-bottom: 8px;
   text-align: center;
-  /* text-decoration: underline; */
 }
 .landing-resource-item-description {
   color: #666;
@@ -454,14 +432,19 @@
   background-color: #021b2f !important;
   color: white;
   text-align: center;
+  padding: 40px 20px;
+}
+.landing-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .landing-cta h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 5vw, 32px);
   margin-bottom: 16px;
   color: white;
 }
 .landing-cta p {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   margin-bottom: 32px;
   max-width: 700px;
   margin-left: auto;
@@ -472,16 +455,38 @@
   display: flex;
   gap: 16px;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.landing-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.landing-btn-primary {
+  background-color: #00c895;
+  color: white;
+  border: none;
+}
+.landing-btn-white-outline {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
 }
 
 /* Footer */
 .landing-footer {
   background-color: #021b2f;
-  padding: 1rem 0 4rem 0;
+  padding: 2rem 1rem;
+}
+.landing-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .landing-footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 .landing-footer-logo {
   margin-bottom: 16px;
@@ -489,6 +494,7 @@
 }
 .landing-footer-description {
   color: white;
+  font-size: 14px;
 }
 .landing-footer-heading {
   font-size: 18px;
@@ -500,8 +506,14 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding-left: 1rem !important;
+  list-style-position: inside;
+  padding-left: 0 !important;
   color: white;
+}
+.landing-footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 .landing-footer-links a:hover {
   color: rgb(207, 207, 207);
@@ -513,8 +525,62 @@
   color: white;
 }
 
-/* Responsive scrollbar */
+/* Media Queries */
+@media (max-width: 1300px) {
+  .landing-reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+  }
+  .landing-reason-card.long-card {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .landing-resource-item-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .landing-resource-item-card.landing-popular {
+    height: auto;
+    margin-top: 0;
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .landing-resource-item-features {
+    margin: auto;
+  }
+  .landing-footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .landing-footer-grid > div:first-child {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-right: 0 !important;
+  }
+  .landing-footer-grid > div:not(:first-child) {
+    grid-row: 2;
+  }
+}
+@media (max-width: 900px) {
+  .landing-reasons-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .landing-reason-card {
+    width: 100%;
+  }
+  .landing-reason-card.long-card {
+    grid-column: unset;
+    grid-row: unset;
+  }
+}
 @media (max-width: 768px) {
+  .landing-getting-started-content {
+    grid-template-columns: 1fr;
+  }
   .landing-scrollbar-card .short-title {
     color: #666;
     line-height: 1.5;
@@ -525,96 +591,79 @@
     overflow: hidden;
     margin-bottom: 1rem;
   }
-
   .landing-scrollbar-card {
     width: 260px;
   }
-
   .landing-scrollbar-card-img {
     height: 160px;
   }
-}
-@media (max-width: 480px) {
-  .landing-scrollbar-card {
-    width: 220px;
-  }
-
-  .landing-scrollbar-card-img {
-    height: 140px;
-  }
-}
-
-/* Responsive styles */
-@media (max-width: 1300px) {
-  .landing-reasons-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
-  }
-
-  .landing-reason-card.long-card {
-    grid-column: span 2;
-    grid-row: auto;
-  }
-}
-@media (max-width: 900px) {
-  .landing-reasons-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .landing-reason-card {
+  .landing-btn {
     width: 100%;
   }
-
-  .landing-reason-card.long-card {
-    grid-column: unset;
-    grid-row: unset;
+  .landing-resources {
+    padding: 3rem 1rem 6rem;
   }
-}
-@media (max-width: 768px) {
-  .landing-getting-started-content {
+  .landing-resource-item {
+    margin-bottom: 2rem;
+  }
+  .landing-resource-item-grid {
     grid-template-columns: 1fr;
   }
-
+  .landing-resource-item-name {
+    font-size: 18px;
+  }
+  .landing-resource-item-description {
+    font-size: 14px;
+  }
+  .landing-feature-text {
+    font-size: 14px;
+  }
   .landing-cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-
   .landing-footer-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+  }
+  .landing-footer-grid > div {
+    text-align: center;
+  }
+  .landing-footer-grid > div:first-child {
+    margin-right: 0 !important;
+    grid-row: auto;
+  }
+  .landing-footer-grid > div:not(:first-child) {
+    grid-row: auto;
+  }
+  .landing-footer-links {
+    align-items: center;
   }
 }
 @media (max-width: 480px) {
   .landing-reasons-grid {
     gap: 12px;
   }
-
   .landing-reason-card {
     padding: 1.5rem;
   }
-
   .landing-reason-icon img {
     max-width: 3rem;
   }
-
   .landing-reason-content > ul > li,
   .landing-reason-card p {
     font-size: 14px;
   }
-
+  .landing-scrollbar-card {
+    width: 220px;
+  }
+  .landing-scrollbar-card-img {
+    height: 140px;
+  }
   .landing-footer-grid {
     grid-template-columns: 1fr;
   }
-
   .landing-btn {
     padding: 8px 12px;
     font-size: 12px;
-  }
-}
-@media (max-width: 425px) {
-  .four-cards-container {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
