@@ -30,9 +30,10 @@ body {
   line-height: 1.6;
 }
 .landing-page-march25 {
-  width: 100vw;
+  width: 99vw;
   margin-left: -8px;
   margin-bottom: -8px;
+  background-color: white;
 }
 .landing-page-march25 a {
   color: inherit;
@@ -65,12 +66,6 @@ body {
   transition: all 0.2s ease;
   font-size: 16px;
 }
-/* .landing-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-} */
 .landing-btn-primary {
   background-color: #00c895;
   color: white;
@@ -172,9 +167,7 @@ body {
 }
 .landing-reasons {
   background-color: #013745;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 8px, rgba(0, 0, 0, 0.24) 0px 2px 8px;
-  /* background-color: #f0fef9; */
-  margin: 1rem 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
 }
 .landing-card-img {
   margin: auto;
@@ -427,6 +420,9 @@ body {
 }
 
 /* Enterprise Reasons */
+.landing-enterprise {
+  background-color: white;
+}
 .landing-enterprise-reasons-container {
   width: 75%;
   margin: auto;
