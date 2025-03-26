@@ -16,6 +16,9 @@
 .text-center {
   text-align: center;
 }
+body {
+  margin: 0;
+}
 
 /* Global Landing page Styles */
 .landing-page-march25 * {
@@ -33,6 +36,9 @@
 }
 .landing-page-march25 a {
   color: inherit;
+}
+.landing-page-march25 p {
+  font-size: 16px;
 }
 .landing-page-march25 img {
   max-width: 100%;
@@ -59,6 +65,12 @@
   transition: all 0.2s ease;
   font-size: 16px;
 }
+/* .landing-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
 .landing-btn-primary {
   background-color: #00c895;
   color: white;
@@ -97,18 +109,18 @@
 .landing-getting-started,
 .landing-featured-courses,
 .landing-reasons,
+.landing-enterprise-reasons,
 .landing-resources,
 .landing-cta {
-  padding: 64px 0;
+  padding: 2rem 0 4rem 0;
 }
 .landing-section-title {
   text-align: center;
-  margin-bottom: 2rem;
 }
 .landing-section-title h2 {
   font-size: 32px;
   color: #021b2f;
-  margin-bottom: 16px;
+  margin-bottom: 0.5rem;
 }
 .landing-section-title h3 {
   font-size: 24px;
@@ -142,18 +154,27 @@
   background-position: center;
 }
 
-/* Getting Started Section */
-.landing-getting-started {
-  background-color: #f0fef9;
+/* Get Ahead of the Curve Section */
+.landing-reasons-container .landing-section-title {
+  margin-bottom: 1rem;
 }
-.landing-getting-started-text {
+.landing-get-ahead-title {
+  color: white !important;
+}
+.landing-get-ahead-text {
   margin: auto;
   padding-bottom: 2rem;
   max-width: 32rem;
 }
-.landing-getting-started-text p {
+.landing-get-ahead-text p {
   text-align: center;
-  color: #555;
+  color: #ffffff;
+}
+.landing-reasons {
+  background-color: #013745;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 8px, rgba(0, 0, 0, 0.24) 0px 2px 8px;
+  /* background-color: #f0fef9; */
+  margin: 1rem 0;
 }
 .landing-card-img {
   margin: auto;
@@ -163,18 +184,13 @@
 .landing-card-text {
   font-size: 18px;
 }
-
-/* Reasons section */
 .landing-reasons-container {
-  width: 90%;
+  width: 75%;
   margin: auto;
-}
-.landing-reasons {
-  background-color: #f0fef9;
 }
 .landing-reasons-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
   gap: 24px;
 }
@@ -185,10 +201,6 @@
   padding: 2rem 2rem 1rem 2rem;
   border: 1px solid #e1e1e1;
   border-radius: 8px;
-}
-.landing-reason-card.long-card {
-  grid-column: 3;
-  grid-row: 1 / span 2;
 }
 .landing-reason-icon {
   flex-shrink: 0;
@@ -201,17 +213,9 @@
   max-width: 4rem;
   height: auto;
 }
-.landing-reason-card:nth-child(4) {
-  grid-column: 1;
-  grid-row: 2;
-}
-.landing-reason-card:nth-child(5) {
-  grid-column: 2;
-  grid-row: 2;
-}
-.landing-reason-card h3 {
+.landing-reason-card h2 {
   font-size: 18px;
-  color: #021b2f;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 .landing-reason-content > ul {
@@ -220,7 +224,7 @@
 }
 .landing-reason-content > ul > li,
 .landing-reason-card p {
-  color: #666;
+  color: #ffffff;
   font-size: 16px;
   padding-bottom: 1rem;
 }
@@ -422,12 +426,45 @@
   color: #666;
 }
 
+/* Enterprise Reasons */
+.landing-enterprise-reasons-container {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 8rem;
+}
+.landing-enterprise-reasons-container .landing-section-title {
+  margin: 3rem 0 4rem 0;
+}
+.landing-enterprise-reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6rem;
+}
+.landing-enterprise-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.landing-enterprise-icon-container {
+  width: 5rem;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.landing-enterprise-item-text {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
 /* CTA section */
 .landing-cta {
-  background-color: #021b2f !important;
+  background-color: #013745;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 40px 20px 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px -1px 8px;
 }
 .landing-container {
   max-width: 1200px;
@@ -452,26 +489,15 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.landing-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 .landing-btn-primary {
   background-color: #00c895;
   color: white;
   border: none;
 }
-.landing-btn-white-outline {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-}
 
 /* Footer */
 .landing-footer {
-  background-color: #021b2f;
+  background-color: #013745;
   padding: 2rem 1rem;
 }
 .landing-container {
@@ -522,14 +548,6 @@
 
 /* Media Queries */
 @media (max-width: 1300px) {
-  .landing-reasons-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto;
-  }
-  .landing-reason-card.long-card {
-    grid-column: span 2;
-    grid-row: auto;
-  }
   .landing-carousel {
     margin: 0;
   }
