@@ -433,7 +433,7 @@ body {
   margin-bottom: 8rem;
 }
 .landing-enterprise-reasons-container .landing-section-title {
-  margin: 3rem 0 4rem 0;
+  margin: 3rem 0;
 }
 .landing-enterprise-reasons-grid {
   display: grid;
@@ -552,6 +552,12 @@ body {
     margin: 0;
   }
 }
+@media (max-width: 1250px) {
+  .landing-enterprise-reasons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
 @media (max-width: 1024px) {
   .landing-resource-item-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -614,7 +620,7 @@ body {
     height: 160px;
   }
   .landing-btn {
-    width: 100%;
+    width: 90%;
   }
   .landing-resources {
     padding: 3rem 1rem 6rem;
@@ -633,6 +639,10 @@ body {
   }
   .landing-feature-text {
     font-size: 14px;
+  }
+  .landing-enterprise-reasons-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
   .landing-cta-buttons {
     flex-direction: column;
