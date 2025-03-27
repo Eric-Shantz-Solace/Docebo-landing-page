@@ -329,14 +329,12 @@ body {
   font-size: 12px;
   font-weight: 500;
 }
-
-/* Resources Section */
 .landing-resources {
-  padding-bottom: 12rem;
+  padding-bottom: 10rem;
+  margin-bottom: -3rem;
   background: no-repeat
-    url("https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/web_mesh_bg.png");
+    url("https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/spider_web_thin_1_8.png");
   background-size: cover;
-  background-position-y: -6rem;
 }
 .landing-resource-item {
   margin-bottom: 5rem;
