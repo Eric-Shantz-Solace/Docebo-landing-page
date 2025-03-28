@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solace Academy</title>
-
     <link rel="stylesheet" href="./styles.css">
-
 </head>
 
 <body>
 
     <!-- ======================== Academy Content ======================== -->
-    <div class="landing-page-march25">
-        <!-- Hero section -->
+    <div class="landing-page-march25"><!-- Hero section -->
         <section class="landing-hero"></section>
         <!-- Get ahead of the curve -->
         <section class="landing-reasons">
@@ -24,8 +21,7 @@
                     <h2 class="landing-get-ahead-title">Get Ahead of the Curve</h2>
                     <div class="landing-get-ahead-text">
                         <p>Gain Solace skills by taking our self-paced on-demand courses, from intro level to deep-dive
-                            learning paths &mdash; built by our experts.
-                        </p>
+                            learning paths &mdash; built by our experts.</p>
                     </div>
                 </div>
                 <div class="landing-reasons-grid">
@@ -94,94 +90,102 @@
                     <p>Explore our most popular courses chosen by thousands of students</p>
                 </div>
                 <div style="text-align: center; margin: 15px 0;"><a href="https://training.solace.com/learn/auth0/login"
-                        target="_blank" rel="noreferrer">
-                        <button class="landing-btn landing-btn-outline">Sign In To See All Courses</button>
-                    </a>
-                </div>
+                        target="_blank" rel="noreferrer"> <button class="landing-btn landing-btn-outline">Sign In To See
+                            All
+                            Courses</button> </a></div>
                 <div><!-- Featured cards go here -->
                     <div class="landing-carousel-container">
-                        <div class="landing-carousel"><!-- Card 1 - Solace Essentials -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                        <div class="landing-carousel"><!-- 
+                            =============== NOTE TO FUTURE DEVELOPERS ===============
+                             > You may be wondering why I'm only using spans in these cards. 
+                             > The reason is that Docebo doesn't let you wrap an a tag around non-inline tags
+                             > The way I discovered to get around that is to replace all the tags with spans
+                             > You need to set to inline style the spans with "display: block" or "display: flex", otherwise the other sytles don't work
+                             > Good luck
+                            --> <!-- Card 1 - Solace Essentials --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/courses/503/solace-essentials" target="_blank"
+                                rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/solaceessentials_thumbnail.png"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Solace Essentials</h3>
-                                    <p class="short-title">Master the fundamentals of Event Driven Architecture and
-                                        Solace PubSub+ Event Broker. This course covers essential messaging concepts,
-                                        patterns, and APIs needed to implement modern event-driven applications.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Course</span>Free</div>
-                                </div>
-                            </div>
-                            <!-- Card 2 - Foundations of EDA -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                                        alt="" /> </span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3"
+                                        style="display: block;">Solace
+                                        Essentials</span> <span class="landing-span-p short-title">Master the
+                                        fundamentals
+                                        of Event Driven Architecture and Solace PubSub+ Event Broker. This course covers
+                                        essential messaging concepts, patterns, and APIs needed to implement modern
+                                        event-driven applications.</span> <span class="landing-carousel-card-footer">
+                                        <span class="landing-carousel-card-tag">Course</span>Free</span> </span> </a>
+                            <!-- Card 2 - Foundations of EDA --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/courses/279/foundations-of-event-driven-architecture"
+                                target="_blank" rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/foundations_thumbnail.png"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Foundations of EDA</h3>
-                                    <p class="short-title">Gain the fundamental knowledge and skills to become
-                                        Event-Driven. Learn the concepts of an Event Driven Architecture and Event
-                                        Driven Methodology.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Course</span>Free</div>
-                                </div>
-                            </div>
-                            <!-- Card 3 - Event Portal Essentials -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                                        alt="" /></span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3"
+                                        style="display: block;">Foundations of EDA</span> <span
+                                        class="landing-span-p short-title">Gain the fundamental knowledge and skills to
+                                        become Event-Driven. Learn the concepts of an Event Driven Architecture and
+                                        Event
+                                        Driven Methodology.</span> <span class="landing-carousel-card-footer"> <span
+                                            class="landing-carousel-card-tag">Course</span>Free</span> </span> </a>
+                            <!-- Card 3 - Event Portal Essentials --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/courses/577/event-portal-essential-from-discover-and-design-to-promote-and-push/lessons/4170:255/event-portal-essential"
+                                target="_blank" rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/ep_thumbnail.png"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Event Portal Essentials</h3>
-                                    <p class="short-title">Learn about the platform that helps you visualize and manage
-                                        the complete lifecycle of events and event-driven applications, streamlining EDA
-                                        integration for your organization.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Course</span>Free</div>
-                                </div>
-                            </div>
-                            <!-- Card 4 - Solutions Consultant Path -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                                        alt="" /></span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3" style="display: block;">Event
+                                        Portal Essentials</span> <span class="landing-span-p short-title">Learn about
+                                        the
+                                        platform that helps you visualize and manage the complete lifecycle of events
+                                        and
+                                        event-driven applications, streamlining EDA integration for your
+                                        organization.</span> <span class="landing-carousel-card-footer"> <span
+                                            class="landing-carousel-card-tag">Course</span>Free</span> </span> </a>
+                            <!-- Card 4 - Solutions Consultant Path --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/learning-plans/37/solace-certified-solutions-consultant-path"
+                                target="_blank" rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/solutions_thumbnail.jpg"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Solace Certified Solutions Consultant Path</h3>
-                                    <p>Learn the skills and knowledge needed to successfully complete a Solace
-                                        foundational concepts test and earn your certification.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Learning Plan</span>Free</div>
-                                </div>
-                            </div>
-                            <!-- Card 5 - Event Driven Integration Mulesoft -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                                        alt="" /> </span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3"
+                                        style="display: block;">Solace
+                                        Certified Solutions Consultant Path</span> <span class="landing-span-p">Learn
+                                        the
+                                        skills and knowledge needed to successfully complete a Solace foundational
+                                        concepts
+                                        test and earn your certification.</span> <span
+                                        class="landing-carousel-card-footer">
+                                        <span class="landing-carousel-card-tag">Learning Plan</span>Free</span> </span>
+                            </a>
+                            <!-- Card 5 - Event Driven Integration Mulesoft --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/learning-plans/83/solace-certified-event-driven-integration-mulesoft"
+                                target="_blank" rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/mulesoft.png"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Event Driven Integration - MuleSoft</h3>
-                                    <p>In this course, we'll explore key design principles, including optimizing data
-                                        flow through intelligent routing, filtering to ensure relevance and security,
-                                        and protocol bridging for seamless communication between different systems.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Learning Plan</span>Free</div>
-                                </div>
-                            </div>
-                            <!-- Card 6 - Performance Tuning for DMR -->
-                            <div class="landing-carousel-card">
-                                <div class="landing-carousel-card-img"><img
+                                        alt="" /> </span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3" style="display: block;">Event
+                                        Driven Integration - MuleSoft</span> <span class="landing-span-p">In this
+                                        course,
+                                        we'll explore key design principles, including optimizing data flow through
+                                        intelligent routing, filtering to ensure relevance and security, and protocol
+                                        bridging for seamless communication between different systems. </span> <span
+                                        class="landing-carousel-card-footer"> <span
+                                            class="landing-carousel-card-tag">Learning Plan</span>Free</span> </span>
+                            </a>
+                            <!-- Card 6 - Performance Tuning for DMR --> <a class="landing-carousel-card"
+                                style="text-decoration: none; display: block;"
+                                href="https://training.solace.com/learn/courses/592/performance-tuning-for-dmr"
+                                target="_blank" rel="noreferrer"> <span class="landing-carousel-card-img"> <img
                                         src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/pt_dmr.png"
-                                        alt="" /></div>
-                                <div class="landing-carousel-card-content">
-                                    <h3>Performance Tuning for DMR</h3>
-                                    <p>This course will take you deep into Dynamic Message Routing (DMR), the key to
-                                        connecting brokers and routing messages across your network.</p>
-                                    <div class="landing-carousel-card-footer"><span
-                                            class="landing-carousel-card-tag">Course</span>Free</div>
-                                </div>
-                            </div>
+                                        alt="" /> </span> <span class="landing-carousel-card-content"
+                                    style="display: block;"> <span class="landing-span-h3">Performance Tuning for
+                                        DMR</span>
+                                    <span class="landing-span-p short-title">This course will take you deep into Dynamic
+                                        Message Routing (DMR), the key to connecting brokers and routing messages across
+                                        your network.</span> <span class="landing-carousel-card-footer"> <span
+                                            class="landing-carousel-card-tag">Course</span>Free</span> </span> </a>
                         </div>
                     </div>
                 </div>
@@ -207,15 +211,18 @@
                                 <li class="landing-feature-item"><span class="landing-feature-text">Integration examples
                                         with Kafka, Spring, Kubernetes, and MQTT</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Organized by
-                                        completion time and difficulty</span></li>
+                                        completion
+                                        time and difficulty</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Real-world scenarios
-                                        for practical application</span></li>
+                                        for
+                                        practical application</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Perfect for hands-on
                                         learners</span></li>
                             </ul>
                             <div class="landing-resource-item-content-btn-container"><a
                                     href="https://codelabs.solace.dev/" target="_blank" rel="noreferrer"> <button
-                                        class="landing-btn landing-btn-dark">Complete Labs</button> </a></div>
+                                        class="landing-btn landing-btn-dark">Complete
+                                        Labs</button> </a></div>
                         </div>
                     </div>
                     <div class="landing-resource-item-card landing-popular">
@@ -229,16 +236,19 @@
                                         style="color: #00c895;">Solly AI</span></h3>
                             </div>
                             <p class="landing-resource-item-description">Chat with a personal AI tutor to help you with
-                                your courses</p>
+                                your
+                                courses</p>
                             <ul class="landing-resource-item-features">
                                 <li class="landing-feature-item"><span class="landing-feature-text">Trained on Solace
                                         documentation</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Get quick answers
-                                        about products and features</span></li>
+                                        about
+                                        products and features</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Available 24/7 for
                                         on-demand help</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Clarify course
-                                        material and request examples</span></li>
+                                        material
+                                        and request examples</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Completely free for
                                         Academy students</span></li>
                             </ul>
@@ -254,15 +264,19 @@
                                 technologies</p>
                             <ul class="landing-resource-item-features">
                                 <li class="landing-feature-item"><span class="landing-feature-text">Videos,
-                                        demonstrations, and expert webinars</span></li>
+                                        demonstrations,
+                                        and expert webinars</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Visual explanations
-                                        of event-driven concepts</span></li>
+                                        of
+                                        event-driven concepts</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Product features and
                                         implementation examples</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Content for
-                                        beginners and advanced users</span></li>
+                                        beginners
+                                        and advanced users</span></li>
                                 <li class="landing-feature-item"><span class="landing-feature-text">Easy-to-follow
-                                        visual learning format</span></li>
+                                        visual
+                                        learning format</span></li>
                             </ul>
                             <div class="landing-resource-item-content-btn-container"><a
                                     href="https://solace.com/resources/videos" target="_blank" rel="noreferrer"> <button
@@ -300,7 +314,8 @@
                                 src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/return_of_investment.gif"
                                 alt="" /></div>
                         <p class="landing-enterprise-item-text">Cost-effective learning model offers better value
-                            through subscription access, especially for teams.</p>
+                            through
+                            subscription access, especially for teams.</p>
                     </div>
                     <div class="landing-enterprise-item">
                         <div class="landing-enterprise-icon-container"><img
@@ -314,21 +329,24 @@
                                 src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/stats.gif"
                                 alt="" /></div>
                         <p class="landing-enterprise-item-text">Exclusive access to industry-recognized certifications
-                            to validate team expertise.</p>
+                            to
+                            validate team expertise.</p>
                     </div>
                     <div class="landing-enterprise-item">
                         <div class="landing-enterprise-icon-container"><img
                                 src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/analytics.gif"
                                 alt="" /></div>
                         <p class="landing-enterprise-item-text">Byte-sized training modules allow teams to focus on
-                            specific topics relevant to their project needs.</p>
+                            specific
+                            topics relevant to their project needs.</p>
                     </div>
                     <div class="landing-enterprise-item">
                         <div class="landing-enterprise-icon-container"><img
                                 src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/pie_chart.gif"
                                 alt="" /></div>
                         <p class="landing-enterprise-item-text">Subscription ensures access to the latest training
-                            materials as Solace products evolve.</p>
+                            materials
+                            as Solace products evolve.</p>
                     </div>
                 </div>
             </div>
@@ -354,13 +372,15 @@
                             src="https://cdn5.dcbstatic.com/files/s/o/solacelearn_docebosaas_com/userfiles/30610/solly.png"
                             alt="Solace Logo" />
                         <p class="landing-footer-description text-center">Empowering careers through quality education
-                            since 2021.</p>
+                            since
+                            2021.</p>
                     </div>
                     <div>
                         <h3 class="landing-footer-heading">Quick Links</h3>
                         <ul class="landing-footer-links">
                             <li><a href="https://solace.com/learn/training/" target="_blank"
-                                    rel="noreferrer">Courses</a></li>
+                                    rel="noreferrer">Courses</a>
+                            </li>
                             <li><a href="https://solace.com/learn/certifications/" target="_blank"
                                     rel="noreferrer">Certifications</a></li>
                             <li><a href="https://solace.com/company/" target="_blank" rel="noreferrer">About Us</a></li>
@@ -379,14 +399,16 @@
                             <li><a href="https://solace.community/?_gl=1*okzmd0*_ga*MjczODY1NjMxLjE3NDEzMTEzNjI.*_ga_XZ3NWMM83E*MTc0MTg5MDcyNS4xMi4xLjE3NDE4OTU2NzMuMC4wLjA."
                                     target="_blank" rel="noreferrer">Community</a></li>
                             <li><a href="https://solaceservices.github.io/Ask-Solly/" target="_blank"
-                                    rel="noreferrer">Ask Solly AI</a></li>
+                                    rel="noreferrer">Ask
+                                    Solly AI</a></li>
                         </ul>
                     </div>
                     <div>
                         <h3 class="landing-footer-heading">Contact Us</h3>
                         <ul class="landing-footer-links">
                             <li><a href="https://solace.com/contact/" target="_blank" rel="noreferrer">Message our
-                                    team</a></li>
+                                    team</a>
+                            </li>
                             <li><strong>Support:</strong> support@solace.com</li>
                             <li><strong>Call us from anywhere:</strong> <br /> +1-613-270-8404</li>
                         </ul>
@@ -395,6 +417,7 @@
             </div>
         </section>
     </div>
+
 </body>
 
 </html>

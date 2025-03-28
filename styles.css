@@ -166,7 +166,7 @@ body {
   color: #ffffff;
 }
 .landing-reasons {
-  background-color: #013745;
+  background-color: #01374e;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 8px;
 }
 .landing-card-img {
@@ -287,14 +287,15 @@ body {
 .landing-carousel-card-content {
   padding: 20px;
 }
-.landing-carousel-card h3 {
-  margin-bottom: 10px;
+.landing-carousel-card .landing-span-h3 {
   color: #333;
   font-size: 18px;
   padding-top: 0.5rem;
   border-top: 1px solid #eee;
+  font-weight: bold;
+  display: block !important;
 }
-.landing-carousel-card p {
+.landing-carousel-card .landing-span-p {
   color: #666;
   line-height: 1.5;
   font-size: 14px;
@@ -330,6 +331,8 @@ body {
   font-size: 12px;
   font-weight: 500;
 }
+
+/* Explore our knowledge base */
 .landing-resources {
   padding-bottom: 10rem;
   margin-bottom: -3rem;
@@ -456,7 +459,7 @@ body {
 
 /* CTA section */
 .landing-cta {
-  background-color: #013745;
+  background-color: #01374e;
   color: white;
   text-align: center;
   padding: 40px 20px 0 20px;
@@ -493,7 +496,7 @@ body {
 
 /* Footer */
 .landing-footer {
-  background-color: #013745;
+  background-color: #01374e;
   padding: 2rem 1rem;
 }
 .landing-container {
