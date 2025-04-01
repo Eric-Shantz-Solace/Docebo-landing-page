@@ -211,7 +211,7 @@ body {
 }
 .landing-reason-content > ul {
   padding-left: 1rem;
-  margin-top: 0;
+  margin: 0 auto;
 }
 .landing-reason-content > ul > li,
 .landing-reason-card p {
@@ -228,7 +228,8 @@ body {
   width: 100%;
   position: relative;
   padding: 0 20px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 .landing-carousel {
   /* This creates the scrollable container */
