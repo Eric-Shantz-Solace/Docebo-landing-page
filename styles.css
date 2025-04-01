@@ -30,9 +30,6 @@ body {
   line-height: 1.6;
 }
 .landing-page-march25 {
-  /* width: 99vw;
-  margin-left: -8px;
-  margin-bottom: -8px; */
   background-color: white;
 }
 .landing-page-march25 a {
@@ -294,6 +291,8 @@ body {
   border-top: 1px solid #eee;
   font-weight: bold;
   display: block !important;
+  padding-left: 1rem;
+  margin-bottom: 10px;
 }
 .landing-carousel-card .landing-span-p {
   color: #666;
@@ -304,6 +303,7 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 0.5rem;
+  padding-left: 1rem;
 }
 .landing-carousel-card .short-title {
   color: #666;
@@ -319,7 +319,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 12px;
+  padding: 1rem 1rem 0 0;
   border-top: 1px solid #eee;
   font-size: 13px;
   color: #888;
