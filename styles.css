@@ -19,7 +19,6 @@
 body {
   margin: 0;
 }
-
 /* Global Landing page Styles */
 .landing-page-march25 * {
   margin: 0;
@@ -547,7 +546,28 @@ body {
 }
 
 /* Media Queries */
+@media (min-width: 2500px) {
+  public-catalog public-catalog-webpage .webpage-content iframe {
+    max-height: 210rem !important;
+    min-height: 210rem !important;
+  }
+}
+@media (1900px <= width <= 2499px) {
+  public-catalog public-catalog-webpage .webpage-content iframe {
+    max-height: 212rem !important;
+    min-height: 212rem !important;
+  }
+}
+@media (1301px <= width <= 1899px) {
+  public-catalog public-catalog-webpage .webpage-content iframe {
+    max-height: 215rem !important;
+    min-height: 215rem !important;
+  }
+}
 @media (max-width: 1300px) {
+  public-catalog public-catalog-webpage .webpage-content iframe {
+    min-height: 219rem !important;
+  }
   .landing-carousel {
     margin: 0;
   }
